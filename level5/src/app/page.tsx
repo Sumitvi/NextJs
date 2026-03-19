@@ -1,13 +1,15 @@
-import Button from '@/Button'
-import React from 'react'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Services from "../components/Services";
 
-const page = () => {
+export default function Home() {
   return (
-    <div>
-      <h1>Welcome to Next.js</h1>
-      <Button/>
-    </div>
-  )
+    <>
+      <Navbar />
+      <Hero />
+      <Services />
+      <Footer />
+    </>
+  );
 }
-
-export default page
